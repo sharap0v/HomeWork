@@ -8,11 +8,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ClientGUI extends JFrame implements ActionListener, Thread.UncaughtExceptionHandler, SocketThreadListener {
@@ -153,9 +153,51 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
             public void run() {
                 log.append(msg + "\n");
                 log.setCaretPosition(log.getDocument().getLength());
+                writeLocalLog(msg,tfLogin.getText());
             }
         });
     }
+    //1. Добавить в сетевой чат запись локальной истории в текстовый файл на клиенте.
+    private void writeLocalLog(String msg, String login) {
+        File file = new File("history["+login+"].txt");
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))){
+            writer.write(msg+"\n");
+        }
+        catch (IOException e){
+            if (!shownIoErrors) {
+            shownIoErrors = true;
+            showException(Thread.currentThread(), e);
+        }
+        }
+    }
+    //как выяснилось подгрузка локального лога как то неочень
+//    private void runLocalLog(String login){
+//
+//        File file = new File("history["+login+"].txt") ;
+//        try(BufferedReader reader = new BufferedReader(new FileReader(file))){
+//            ArrayList<String> list = new ArrayList<String>();
+//            while (reader.ready()){
+//            list.add(reader.readLine());
+//            }
+//            if(list.size()<100){
+//                for (String s: list) {
+//                    log.append(s+"\n");
+//                }
+//            }
+//            else{
+//                int i= 1;
+//                while(i<101){
+//                    log.append(list.get(list.size()-i));
+//                }
+//            }
+//        }
+//        catch(IOException e) {
+//            if (!shownIoErrors) {
+//                shownIoErrors = true;
+//                showException(Thread.currentThread(), e);
+//            }
+//        }
+//    }
 
     private void showException(Thread t, Throwable e) {
         String msg;
@@ -184,6 +226,8 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
     @Override
     public void onSocketStart(SocketThread thread, Socket socket) {
         putLog("Start");
+        //runLocalLog(tfLogin.getText());
+        ///тут вызовем метод чтения последних 100 логов
     }
 
     @Override

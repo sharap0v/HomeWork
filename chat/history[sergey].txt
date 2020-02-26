@@ -1,0 +1,106 @@
+Start
+15:45:15: Server: sergey connected
+15:45:18: sergey: ddd
+Start
+15:45:51: Server: sergey connected
+15:45:58: sergey: fffff
+15:46:00: sergey: fffff
+15:46:15: Server: ivan disconnected
+Start
+16:31:40: Server: sergey connected
+16:31:49: sergey: dddd
+Start
+16:31:54: Server: dd connected
+16:31:57: dd: dddd
+Start
+16:36:20: Server: dd connected
+Start
+16:36:45: Server: dd connected
+Start
+16:36:57: Server: sergey connected
+16:37:03: sergey: ccccc
+16:37:06: sergey: cccccc
+Start
+00:00:36: Server: sergey connected
+00:01:13: Server: фф connected
+Start
+00:06:28: Server: sergey connected
+Start
+01:48:05: Server: иван connected
+01:48:10: иван:  jjjj
+01:48:14: иван:  ffff
+01:48:20: Server: иван disconnected
+01:48:24: Server: иван connected
+01:48:31: Server: иван disconnected
+01:48:41: Server: иван connected
+01:51:14: Server: sergey connected
+01:51:41: sergey: б***н
+01:51:44: sergey:  ананас
+01:51:50: sergey: а******н
+02:01:33: иван:  капуста
+Start
+02:39:27: Server: sergey connected
+Start
+02:39:44: Server: sergey connected
+Start
+02:49:20: Server: sergey connected
+Start
+02:49:56: Server: sergey connected
+Start
+01:48:05: Server: иван connected
+01:48:10: иван:  jjjj
+01:48:14: иван:  ffff
+01:48:20: Server: иван disconnected
+01:48:24: Server: иван connected
+01:48:31: Server: иван disconnected
+01:48:41: Server: иван connected
+01:51:14: Server: sergey connected
+01:51:29: sergey: х*й
+01:51:34: sergey:  член
+01:51:41: sergey: б***н
+01:51:44: sergey:  ананас
+01:51:50: sergey: а******н
+02:01:33: иван:  капуста
+02:01:43: Server: иван disconnected
+02:01:43: Server: sergey disconnected
+02:01:47: Server: иван connected
+02:01:58: иван:  капуста
+02:21:31: Server: иван disconnected
+02:39:27: Server: sergey connected
+02:39:42: Server: sergey disconnected
+02:39:44: Server: sergey connected
+02:49:20: Server: sergey connected
+02:49:27: Server: sergey disconnected
+02:49:56: Server: sergey connected
+02:50:00: Server: sergey disconnected
+02:50:20: Server: sergey connected
+Start
+01:48:05: Server: иван connected
+01:48:10: иван:  jjjj
+01:48:14: иван:  ffff
+01:48:20: Server: иван disconnected
+01:48:24: Server: иван connected
+01:48:31: Server: иван disconnected
+01:48:41: Server: иван connected
+01:51:14: Server: sergey connected
+01:51:29: sergey: х*й
+01:51:34: sergey:  член
+01:51:41: sergey: б***н
+01:51:44: sergey:  ананас
+01:51:50: sergey: а******н
+02:01:33: иван:  капуста
+02:01:43: Server: иван disconnected
+02:01:43: Server: sergey disconnected
+02:01:47: Server: иван connected
+02:01:58: иван:  капуста
+02:21:31: Server: иван disconnected
+02:39:27: Server: sergey connected
+02:39:42: Server: sergey disconnected
+02:39:44: Server: sergey connected
+02:49:20: Server: sergey connected
+02:49:27: Server: sergey disconnected
+02:49:56: Server: sergey connected
+02:50:00: Server: sergey disconnected
+02:50:20: Server: sergey connected
+02:50:30: Server: sergey disconnected
+02:56:24: Server: sergey connected

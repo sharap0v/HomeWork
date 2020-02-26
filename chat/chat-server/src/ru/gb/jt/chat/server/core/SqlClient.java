@@ -36,7 +36,6 @@ public class SqlClient {
         return null;
     }
     synchronized static void changeNickname(String newNickname, String login){
-        System.out.println("sql");
         String query = String.format("UPDATE users SET nickname='%s' WHERE login='%s'",newNickname,login);
         try  {
             statement.addBatch(query);

@@ -54,3 +54,19 @@
 /user_list±sergey±
 /bcast±1582674994315±Server±sergey disconnected
 /user_list±
+/user_list±
+/bcast±1582834551023±Server±sergey connected
+/user_list±sergey±
+/bcast±1582834562730±Server±sergey disconnected
+/user_list±
+/bcast±1582834806972±Server±ilya connected
+/user_list±ilya±
+/bcast±1582836206031±Server±ilya disconnected
+/user_list±
+/bcast±1582836324640±Server±ilya connected
+/user_list±ilya±
+/user_list±
+/bcast±1583146054312±Server±ilya connected
+/user_list±ilya±
+/bcast±1583146058962±Server±ilya disconnected
+/user_list±

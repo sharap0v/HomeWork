@@ -18,6 +18,9 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class ChatServer implements ServerSocketThreadListener, SocketThreadListener {
 
@@ -43,10 +46,13 @@ public class ChatServer implements ServerSocketThreadListener, SocketThreadListe
     }
 
     public void start(int port) {
+        ExecutorService executorService = executorService = Executors.newSingleThreadExecutor();;;
         if (server != null && server.isAlive())
             putLog("Server already started");
         else
             server = new ServerSocketThread(this, "Server", port, 2000);
+            executorService.execute(server);
+
     }
 
     public void stop() {

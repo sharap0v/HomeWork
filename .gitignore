@@ -11,6 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
+chat/*.txt
 *.jar
 *.war
 *.nar
